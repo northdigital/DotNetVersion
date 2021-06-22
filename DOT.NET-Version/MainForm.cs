@@ -26,6 +26,8 @@ namespace DOT.NET_Version
     // Checking the version using >= will enable forward compatibility.
     private static string CheckFor45PlusVersion(int releaseKey)
     {
+      if (releaseKey >= 528372)
+        return "4.8.04084 or later";
       if (releaseKey >= 528040)
         return "4.8 or later";
       if (releaseKey >= 461808)
